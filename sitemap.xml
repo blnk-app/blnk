@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://blnk-app.github.io/blnk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/"/>
+  </url>
+  <url>
+    <loc>https://blnk-app.github.io/blnk/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/"/>
+  </url>
+  <url>
+    <loc>https://blnk-app.github.io/blnk/uk/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/"/>
+  </url>
+  <url>
+    <loc>https://blnk-app.github.io/blnk/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/privacy/"/>
+  </url>
+  <url>
+    <loc>https://blnk-app.github.io/blnk/ru/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/privacy/"/>
+  </url>
+  <url>
+    <loc>https://blnk-app.github.io/blnk/uk/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/privacy/"/>
+  </url>
+</urlset>

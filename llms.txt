@@ -1,0 +1,45 @@
+# BLNK
+
+> BLNK is a free, lightweight screenshot tool. Slogan: “Capture ideas before they’re gone”. Press a hotkey,
+> select an area, annotate right over the selection and copy, save or share a private
+> link. No account, no ads, no telemetry.
+
+## Key facts
+
+- Price: free; no account, no ads, no trial.
+- Platforms: Windows 10 and 11 (x64 and ARM64); macOS version in testing.
+- Installer size: about 5 MB. Written in Rust, not Electron.
+- Interface languages: English, Ukrainian, Russian.
+- Privacy: screenshots and history stay on the computer; the app only goes online to
+  check for updates (GitHub) and to upload to storage the user configured
+  (S3, Cloudflare R2, own HTTP address, FTP).
+- Updates: signed installers; the signature is verified before installing.
+
+## Features
+
+- **A screenshot in a second.** Area, screen or window with one hotkey. Exact frame sizes, arrow-key nudging and a magnifier with HEX colour.
+- **Annotate in place.** Eleven tools: arrow, line, box, ellipse, pencil, text, numbers, highlighter, blur, pixelate and fill. Undo and redo.
+- **Tab auto-blur.** BLNK finds browser tabs and bookmarks in the screenshot and blurs them, so nothing extra ends up in a chat. Windows for now.
+- **A private link.** Upload to your own S3, Cloudflare R2, HTTP address or FTP. The file name is 22 random characters and the file carries no metadata.
+- **History at hand.** All screenshots in one window: reopen with editable annotations, copy the link or delete the file from the server.
+- **Light and native.** Written in Rust, no Electron. Pin a screenshot on top, drag it from the notification, print it. English, Ukrainian and Russian.
+
+## FAQ
+
+- **Is BLNK free?** Yes. Everything BLNK does today is free. There is no account, no ads and no trial period.
+- **Does BLNK work on Mac?** BLNK runs on Windows 10 and 11 (x64 and ARM). The macOS version for Apple Silicon is in testing and will be available soon.
+- **Where are my screenshots stored?** On your computer, in the folder you choose. The history is stored locally too. Nothing is uploaded unless you press Upload.
+- **How do I share a screenshot as a link?** Connect your own storage in the settings: S3, Cloudflare R2, an HTTP address or FTP. After an upload, the link is copied to the clipboard. The file name is 22 random characters, so the link can't be guessed.
+- **Can I hide private information?** Yes. Blur, pixelate and fill are applied to the pixels of the saved file and can't be undone by the recipient. On Windows, BLNK also blurs browser tabs and bookmarks automatically.
+- **How is BLNK different from Lightshot and ShareX?** Like Lightshot, BLNK lets you annotate right over the selection, but links lead to your own storage instead of a shared public service. Compared with ShareX, BLNK is simpler: few settings, annotation in place, and a macOS version is on the way.
+- **What are the default hotkeys?** On Windows: PrtSc for an area, Shift+PrtSc for the whole screen, Ctrl+PrtSc for a window. On macOS: Option+Shift+1, 2 and 3. All of them can be changed in the settings.
+- **How does BLNK update?** BLNK checks GitHub for new versions and installs them after you confirm. Every installer is signed and the signature is verified before installing. Automatic checks can be turned off.
+
+## Links
+
+- [Home (English)](https://blnk-app.github.io/blnk/)
+- [Главная (русский)](https://blnk-app.github.io/blnk/ru/)
+- [Головна (українська)](https://blnk-app.github.io/blnk/uk/)
+- [Privacy policy](https://blnk-app.github.io/blnk/privacy/)
+- [Downloads and changelog](https://github.com/blnk-app/blnk/releases)
+- [Support](https://github.com/blnk-app/blnk/issues)
