@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BLNK Hotkeys: Defaults, Custom Keys and Windows Limits</title>
+  <meta name="description" content="BLNK hotkeys on Windows: PrtSc, Shift+PrtSc, Ctrl+PrtSc and screen recording. How to set your own key and why hotkeys don’t work over administrator windows.">
+  <link rel="canonical" href="https://blnk-app.github.io/blnk/docs/hotkeys/">
+  <link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/docs/hotkeys/">
+  <link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/docs/hotkeys/">
+  <link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/docs/hotkeys/">
+  <link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/docs/hotkeys/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="BLNK Hotkeys: Defaults, Custom Keys and Windows Limits">
+  <meta property="og:description" content="BLNK hotkeys on Windows: PrtSc, Shift+PrtSc, Ctrl+PrtSc and screen recording. How to set your own key and why hotkeys don’t work over administrator windows.">
+  <meta property="og:url" content="https://blnk-app.github.io/blnk/docs/hotkeys/">
+  <meta property="og:image" content="https://blnk-app.github.io/blnk/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://blnk-app.github.io/blnk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://blnk-app.github.io/blnk/docs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Hotkeys",
+        "item": "https://blnk-app.github.io/blnk/docs/hotkeys/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../../">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" aria-label="Menu">
+        <a href="../../features/">Features</a>
+        <a href="../../docs/">Guides</a>
+        <a href="../../download/">Download</a>
+        <a href="../../changelog/">Changelog</a>
+        <a href="../../about/">About</a>
+      </nav>
+      <div class="tools">
+        <nav class="langs" aria-label="Language">
+          <a href="../../docs/hotkeys/" hreflang="en" lang="en" aria-current="page">EN</a>
+          <a href="../../ru/docs/hotkeys/" hreflang="ru" lang="ru">RU</a>
+          <a href="../../uk/docs/hotkeys/" hreflang="uk" lang="uk">UK</a>
+        </nav>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Download</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="../../">Home</a></li><li><a href="../../docs/">Guides</a></li><li aria-current="page">Hotkeys</li></ol></nav>
+        <article>
+        <h1>BLNK hotkeys</h1>
+        
+        <p class="lead">The default keys, how to set your own, and where Windows keeps every program away from the keyboard.</p>
+        <h2>Default keys</h2>
+        <table>
+          <thead><tr><th scope="col">Action</th><th scope="col">Key</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Capture area</th><td>PrtSc</td></tr>
+            <tr><th scope="row">Capture screen</th><td>Shift+PrtSc</td></tr>
+            <tr><th scope="row">Capture window</th><td>Ctrl+PrtSc</td></tr>
+            <tr><th scope="row">Record screen</th><td>Not set</td></tr>
+          </tbody>
+        </table>
+        <p>The same actions are in the BLNK icon menu in the system tray.</p>
+        <h2>How to change a key</h2>
+        <ol>
+          <li>Open Settings → Hotkeys.</li>
+          <li>Click Change next to an action and press the new key or shortcut. Esc cancels.</li>
+          <li>When the key works, a Works mark appears next to it.</li>
+        </ol>
+        <p>Default brings back the original key, Disable removes it, and Reset all restores every key.</p>
+        <h2>Single key or shortcut</h2>
+        <p>A hotkey can be a single key or a shortcut with Ctrl, Alt, Shift and Win. A single key is captured in every program: you can’t type it, and it stops working while you type text. Pause and F13–F24 make better single keys. If Windows already uses the shortcut you pick, BLNK suggests a free one with Ctrl+Alt.</p>
+        <p>BLNK catches hotkeys before other programs, PrtSc included. So if a key is also set in Lightshot, ShareX or a keyboard utility, BLNK gets it in normal windows.</p>
+        <h2>Windows limits</h2>
+        <p>Windows protects windows that run as administrator: an administrator PowerShell or Command Prompt, Task Manager, installers. Normal programs don’t receive key presses while such a window is active.</p>
+        <ul>
+          <li><strong>In version 0.1.0-beta.10</strong>, BLNK hotkeys don’t work over these windows. Click another window or the desktop, or choose a capture from the BLNK icon menu in the tray.</li>
+          <li><strong>In the next version</strong>, shortcuts with Ctrl, Alt, Shift or Win will work over these windows. Single keys such as PrtSc, End or F keys won’t: that is Windows protection. If you often capture over administrator windows, use a shortcut with a modifier.</li>
+          <li><strong>Keys from utilities.</strong> If a key press comes from a program such as Logi Options+ rather than the keyboard itself, it reaches no program over administrator windows.</li>
+          <li><strong>Esc during a recording</strong> doesn’t stop it over an administrator window. Press Stop on the panel or the recording hotkey again.</li>
+        </ul>
+        <p>You don’t need to run BLNK as administrator. Other common cases are in <a href="../../docs/troubleshooting/">troubleshooting</a>.</p>
+        <section aria-labelledby="page-faq">
+          <h2 id="page-faq">Questions and answers</h2>
+          <div class="faq">
+          <details>
+            <summary><h3>Can I use a single key without Ctrl or Alt?</h3></summary>
+            <p>Yes. But that key is captured in every program, so you won’t be able to type it. Pause, F13–F24 or a Ctrl+Alt shortcut work better.</p>
+          </details>
+          <details>
+            <summary><h3>Lightshot or ShareX already uses PrtSc. What happens?</h3></summary>
+            <p>BLNK catches hotkeys before other programs, so in normal windows BLNK gets the key.</p>
+          </details>
+          <details>
+            <summary><h3>Why doesn’t the hotkey work in Task Manager?</h3></summary>
+            <p>Task Manager runs as administrator, and Windows doesn’t pass the keys of such windows to normal programs. See the Windows limits section below.</p>
+          </details>
+          </div>
+        </section>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Related pages</h2>
+          <ul class="related">
+          <li><a href="../../docs/troubleshooting/">Troubleshooting</a></li>
+          <li><a href="../../docs/getting-started/">Getting started</a></li>
+          <li><a href="../../features/screen-recorder/">Screen recording</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Try BLNK now</h2>
+        <p>Free, about 6 MB, installs in seconds.</p>
+        <div class="downloads">
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Download for Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows on ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+      <div>
+        <h2>Product</h2>
+        <ul>
+          <li><a href="../../download/">Download</a></li>
+          <li><a href="../../features/">Features</a></li>
+          <li><a href="../../changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Features</h2>
+        <ul>
+          <li><a href="../../features/screen-recorder/">Screen recording</a></li>
+          <li><a href="../../features/annotate/">Annotation</a></li>
+          <li><a href="../../features/blur/">Hiding private data</a></li>
+          <li><a href="../../features/share-link/">Private links</a></li>
+          <li><a href="../../features/performance/">Speed and technology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="../../docs/getting-started/">Getting started</a></li>
+          <li><a href="../../docs/hotkeys/">Hotkeys</a></li>
+          <li><a href="../../docs/troubleshooting/">Troubleshooting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../../about/">About</a></li>
+          <li><a href="../../privacy/">Privacy</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">All versions</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Support</a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="copyright">© 2026 BLNK</p>
+    </footer>
+  </div>
+  <script src="../../app.js" defer></script>
+</body>
+</html>

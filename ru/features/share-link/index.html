@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приватная ссылка на скриншот через своё хранилище | BLNK</title>
+  <meta name="description" content="Загружайте снимки и записи в S3, Cloudflare R2, Google Диск, на HTTP-адрес, FTP или SFTP и получайте приватную ссылку. BLNK использует случайные имена и убирает метаданные.">
+  <link rel="canonical" href="https://blnk-app.github.io/blnk/ru/features/share-link/">
+  <link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/features/share-link/">
+  <link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/features/share-link/">
+  <link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/features/share-link/">
+  <link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/features/share-link/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="Приватная ссылка на скриншот через своё хранилище | BLNK">
+  <meta property="og:description" content="Загружайте снимки и записи в S3, Cloudflare R2, Google Диск, на HTTP-адрес, FTP или SFTP и получайте приватную ссылку. BLNK использует случайные имена и убирает метаданные.">
+  <meta property="og:url" content="https://blnk-app.github.io/blnk/ru/features/share-link/">
+  <meta property="og:image" content="https://blnk-app.github.io/blnk/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://blnk-app.github.io/blnk/ru/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Возможности",
+        "item": "https://blnk-app.github.io/blnk/ru/features/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Приватные ссылки",
+        "item": "https://blnk-app.github.io/blnk/ru/features/share-link/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../../../ru/">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" aria-label="Меню">
+        <a href="../../../ru/features/">Возможности</a>
+        <a href="../../../ru/docs/">Инструкции</a>
+        <a href="../../../ru/download/">Скачать</a>
+        <a href="../../../ru/changelog/">Что нового</a>
+        <a href="../../../ru/about/">О проекте</a>
+      </nav>
+      <div class="tools">
+        <nav class="langs" aria-label="Язык">
+          <a href="../../../features/share-link/" hreflang="en" lang="en">EN</a>
+          <a href="../../../ru/features/share-link/" hreflang="ru" lang="ru" aria-current="page">RU</a>
+          <a href="../../../uk/features/share-link/" hreflang="uk" lang="uk">UK</a>
+        </nav>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Скачать</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="../../../ru/">Главная</a></li><li><a href="../../../ru/features/">Возможности</a></li><li aria-current="page">Приватные ссылки</li></ol></nav>
+        <article>
+        <h1>Приватная ссылка на скриншот</h1>
+        
+        <p class="lead">BLNK загружает снимок в хранилище, которым управляете вы, и копирует ссылку в буфер. Файлы не проходят через серверы BLNK.</p>
+
+        <h2>Какие хранилища поддерживаются</h2>
+        <table>
+          <thead><tr><th scope="col">Хранилище</th><th scope="col">Что понадобится</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">S3 и Cloudflare R2</th><td>Endpoint, бакет, ключи доступа и публичный адрес</td></tr>
+            <tr><th scope="row">Свой HTTP-адрес</th><td>Адрес загрузки, заголовки при необходимости и поле ссылки в ответе</td></tr>
+            <tr><th scope="row">FTP и FTPS</th><td>Сервер, имя пользователя, пароль и публичный адрес</td></tr>
+            <tr><th scope="row">SFTP</th><td>Сервер, имя пользователя, пароль или файл ключа и публичный адрес</td></tr>
+            <tr><th scope="row">Google Диск</th><td>Вход через Google в браузере, папка на Диске и кто видит ссылку. BLNK видит только файлы, которые создал сам</td></tr>
+          </tbody>
+        </table>
+        <h2>Почему ссылка приватная</h2>
+        <ul>
+          <li>Имя файла состоит из 22 случайных символов, поэтому ссылку не угадать.</li>
+          <li>Загруженная картинка содержит только пиксели, без EXIF и других метаданных.</li>
+          <li>При подключении по SFTP BLNK проверяет ключ сервера.</li>
+        </ul>
+        <h2>Как поделиться снимком</h2>
+        <ol>
+          <li>Откройте раздел загрузки в настройках, добавьте хранилище и нажмите кнопку проверки.</li>
+          <li>Сделайте снимок и нажмите «Загрузить и скопировать ссылку» или Ctrl+U.</li>
+          <li>Вставьте ссылку из буфера туда, куда нужно.</li>
+        </ol>
+        <p>Записи экрана загружаются так же: из истории или сразу после остановки, если включить «Загружать сразу» в настройках записи.</p>
+        <p>Перед отправкой <a href="../../../ru/features/blur/">скройте личные данные</a> на снимке.</p>
+        <section aria-labelledby="page-faq">
+          <h2 id="page-faq">Вопросы и ответы</h2>
+          <div class="faq">
+          <details>
+            <summary><h3>BLNK хранит мои снимки?</h3></summary>
+            <p>Нет. Снимки отправляются напрямую в настроенное вами хранилище.</p>
+          </details>
+          <details>
+            <summary><h3>Кто может открыть ссылку?</h3></summary>
+            <p>Любой, у кого она есть, если хранилище разрешает публичное чтение. Случайное имя файла делает ссылку практически неугадываемой. На Google Диске доступ выбираете вы: все по ссылке, ваша организация или только вы.</p>
+          </details>
+          <details>
+            <summary><h3>Где хранятся пароли от хранилищ?</h3></summary>
+            <p>В диспетчере учётных данных Windows, а не в файлах BLNK.</p>
+          </details>
+          <details>
+            <summary><h3>Можно удалить загруженный снимок?</h3></summary>
+            <p>Да. Выберите удаление с сервера в истории BLNK.</p>
+          </details>
+          </div>
+        </section>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Смотрите также</h2>
+          <ul class="related">
+          <li><a href="../../../ru/features/blur/">Скрытие личных данных</a></li>
+          <li><a href="../../../ru/privacy/">Конфиденциальность</a></li>
+          <li><a href="../../../ru/download/">Скачать</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Попробуйте BLNK</h2>
+        <p>Бесплатно, около 6 МБ, ставится за секунды.</p>
+        <div class="downloads">
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Скачать для Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows на ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+      <div>
+        <h2>Продукт</h2>
+        <ul>
+          <li><a href="../../../ru/download/">Скачать</a></li>
+          <li><a href="../../../ru/features/">Возможности</a></li>
+          <li><a href="../../../ru/changelog/">Что нового</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Возможности</h2>
+        <ul>
+          <li><a href="../../../ru/features/screen-recorder/">Запись экрана</a></li>
+          <li><a href="../../../ru/features/annotate/">Разметка</a></li>
+          <li><a href="../../../ru/features/blur/">Скрытие личных данных</a></li>
+          <li><a href="../../../ru/features/share-link/">Приватные ссылки</a></li>
+          <li><a href="../../../ru/features/performance/">Скорость и технологии</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Инструкции</h2>
+        <ul>
+          <li><a href="../../../ru/docs/getting-started/">Первый запуск</a></li>
+          <li><a href="../../../ru/docs/hotkeys/">Горячие клавиши</a></li>
+          <li><a href="../../../ru/docs/troubleshooting/">Решение проблем</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Проект</h2>
+        <ul>
+          <li><a href="../../../ru/about/">О проекте</a></li>
+          <li><a href="../../../ru/privacy/">Конфиденциальность</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">Все версии</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Поддержка</a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="copyright">© 2026 BLNK</p>
+    </footer>
+  </div>
+  <script src="../../../app.js" defer></script>
+</body>
+</html>

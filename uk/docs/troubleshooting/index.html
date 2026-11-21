@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Розв’язання проблем BLNK: гарячі клавіші, звук, запис</title>
+  <meta name="description" content="Що робити, якщо в BLNK не спрацьовує гаряча клавіша, Esc не зупиняє запис, у відео немає звуку або GIF обривається. Причини й рішення.">
+  <link rel="canonical" href="https://blnk-app.github.io/blnk/uk/docs/troubleshooting/">
+  <link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/docs/troubleshooting/">
+  <link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/docs/troubleshooting/">
+  <link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/docs/troubleshooting/">
+  <link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/docs/troubleshooting/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="Розв’язання проблем BLNK: гарячі клавіші, звук, запис">
+  <meta property="og:description" content="Що робити, якщо в BLNK не спрацьовує гаряча клавіша, Esc не зупиняє запис, у відео немає звуку або GIF обривається. Причини й рішення.">
+  <meta property="og:url" content="https://blnk-app.github.io/blnk/uk/docs/troubleshooting/">
+  <meta property="og:image" content="https://blnk-app.github.io/blnk/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Головна",
+        "item": "https://blnk-app.github.io/blnk/uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Інструкції",
+        "item": "https://blnk-app.github.io/blnk/uk/docs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Розв’язання проблем",
+        "item": "https://blnk-app.github.io/blnk/uk/docs/troubleshooting/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../../../uk/">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" aria-label="Меню">
+        <a href="../../../uk/features/">Можливості</a>
+        <a href="../../../uk/docs/">Інструкції</a>
+        <a href="../../../uk/download/">Завантажити</a>
+        <a href="../../../uk/changelog/">Що нового</a>
+        <a href="../../../uk/about/">Про проєкт</a>
+      </nav>
+      <div class="tools">
+        <nav class="langs" aria-label="Мова">
+          <a href="../../../docs/troubleshooting/" hreflang="en" lang="en">EN</a>
+          <a href="../../../ru/docs/troubleshooting/" hreflang="ru" lang="ru">RU</a>
+          <a href="../../../uk/docs/troubleshooting/" hreflang="uk" lang="uk" aria-current="page">UK</a>
+        </nav>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Навігаційний ланцюжок"><ol><li><a href="../../../uk/">Головна</a></li><li><a href="../../../uk/docs/">Інструкції</a></li><li aria-current="page">Розв’язання проблем</li></ol></nav>
+        <article>
+        <h1>Розв’язання проблем</h1>
+        
+        <p class="lead">Часті випадки, їхні причини й що робити. Якщо вашого випадку тут немає, напишіть у підтримку на GitHub.</p>
+        <h2 id="admin-windows">Гаряча клавіша не спрацьовує в PowerShell або Диспетчері завдань</h2>
+        <p>Найімовірніше, вікно запущене від імені адміністратора. Windows не передає клавіші таких вікон звичайним програмам. Клацніть по іншому вікну чи робочому столу або виберіть знімок у меню значка BLNK у треї. У наступній версії над такими вікнами запрацюють сполучення з Ctrl, Alt, Shift або Win, але не одиночні клавіші. Докладніше — в інструкції <a href="../../../uk/docs/hotkeys/">«Гарячі клавіші»</a>.</p>
+        <h2 id="utility-keys">Клавіша з Logi Options+ або іншої утиліти не спрацьовує</h2>
+        <p>Якщо натискання надсилає утиліта, а не сама клавіатура, над вікнами адміністратора воно не дійде до жодної програми. Це обмеження Windows. У звичайних вікнах така клавіша працює.</p>
+        <h2 id="record-hotkey">Запис екрана не починається за клавішею</h2>
+        <p>У запису екрана немає клавіші за замовчуванням. Призначте її в «Налаштування» → «Гарячі клавіші».</p>
+        <h2 id="esc">Esc не зупиняє запис</h2>
+        <p>Над вікном, запущеним від імені адміністратора, Esc до BLNK не доходить. Зупиніть запис кнопкою «Стоп» на панелі або повторним натисканням гарячої клавіші запису.</p>
+        <h2 id="no-sound">У записі немає звуку</h2>
+        <ul>
+          <li>Звук комп’ютера й мікрофон за замовчуванням вимкнені. Увімкніть їх у «Налаштування» → «Знімок» → «Запис екрана».</li>
+          <li>Перевірте кнопки звуку й мікрофона на панелі запису: можливо, джерело вимкнене.</li>
+          <li>BLNK записує мікрофон, вибраний у Windows за замовчуванням.</li>
+          <li>У GIF звуку немає. Для запису зі звуком виберіть MP4.</li>
+        </ul>
+        <h2 id="gif">GIF обривається через хвилину</h2>
+        <p>GIF розрахований на короткі ролики: до хвилини, не ширший за 960 точок і до 15 кадрів на секунду. Для довгих записів виберіть MP4, він пише до 30 хвилин.</p>
+        <h2 id="colors">Кольори у відео трохи розмиті</h2>
+        <p>Відео зберігається в H.264 з кольором 4:2:0, як майже всі файли MP4. Тонкі кольорові краї згладженого шрифту (ClearType) при цьому трохи пом’якшуються, це нормально. Білий текст, який жовтів у ранніх версіях, виправлено в 0.1.0-beta.10.</p>
+        <h2 id="history-size">Історія займає багато місця</h2>
+        <p>Один запис в історії — близько 0,25 МБ. Зменште ліміт у «Налаштування» → «Збереження» → «Історія»: 100, 500, 1000 або 5000 записів. Старі записи видаляються з історії самі, файли в теці знімків залишаються.</p>
+        <h2 id="smartscreen">Windows показує попередження під час встановлення</h2>
+        <p>Інсталятор поки не підписаний сертифікатом розробника, тому SmartScreen може його не розпізнати. Натисніть «Докладніше», а потім «Усе одно запустити». Завантажуйте BLNK лише зі <a href="../../../uk/download/">сторінки завантаження</a>.</p>
+        <h2 id="arm">Немає свіжої версії для Windows ARM64</h2>
+        <p>Збірки для Windows ARM64 поки залишаються на версії 0.1.0-beta.4. Нові з’являться після 1 грудня 2026 року. Версія для macOS у тестуванні.</p>
+        <p>Не знайшли свій випадок? Опишіть його в <a href="https://github.com/blnk-app/blnk/issues">підтримці на GitHub</a>.</p>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Дивіться також</h2>
+          <ul class="related">
+          <li><a href="../../../uk/docs/hotkeys/">Гарячі клавіші</a></li>
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../../uk/download/">Завантажити</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Спробуйте BLNK</h2>
+        <p>Безкоштовно, близько 6 МБ, встановлюється за секунди.</p>
+        <div class="downloads">
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити для Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows на ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+      <div>
+        <h2>Продукт</h2>
+        <ul>
+          <li><a href="../../../uk/download/">Завантажити</a></li>
+          <li><a href="../../../uk/features/">Можливості</a></li>
+          <li><a href="../../../uk/changelog/">Що нового</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Можливості</h2>
+        <ul>
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../../uk/features/annotate/">Розмітка</a></li>
+          <li><a href="../../../uk/features/blur/">Приховування особистих даних</a></li>
+          <li><a href="../../../uk/features/share-link/">Приватні посилання</a></li>
+          <li><a href="../../../uk/features/performance/">Швидкість і технології</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Інструкції</h2>
+        <ul>
+          <li><a href="../../../uk/docs/getting-started/">Перший запуск</a></li>
+          <li><a href="../../../uk/docs/hotkeys/">Гарячі клавіші</a></li>
+          <li><a href="../../../uk/docs/troubleshooting/">Розв’язання проблем</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Проєкт</h2>
+        <ul>
+          <li><a href="../../../uk/about/">Про проєкт</a></li>
+          <li><a href="../../../uk/privacy/">Конфіденційність</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">Усі версії</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Підтримка</a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="copyright">© 2026 BLNK</p>
+    </footer>
+  </div>
+  <script src="../../../app.js" defer></script>
+</body>
+</html>

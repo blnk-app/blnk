@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Інструкції BLNK — перший запуск, гарячі клавіші, розв’язання проблем</title>
+  <meta name="description" content="Як почати роботу з BLNK на Windows: встановлення й перший знімок, налаштування гарячих клавіш, запис зі звуком і розв’язання частих проблем.">
+  <link rel="canonical" href="https://blnk-app.github.io/blnk/uk/docs/">
+  <link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/docs/">
+  <link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/docs/">
+  <link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/docs/">
+  <link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/docs/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="Інструкції BLNK — перший запуск, гарячі клавіші, розв’язання проблем">
+  <meta property="og:description" content="Як почати роботу з BLNK на Windows: встановлення й перший знімок, налаштування гарячих клавіш, запис зі звуком і розв’язання частих проблем.">
+  <meta property="og:url" content="https://blnk-app.github.io/blnk/uk/docs/">
+  <meta property="og:image" content="https://blnk-app.github.io/blnk/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Головна",
+        "item": "https://blnk-app.github.io/blnk/uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Інструкції",
+        "item": "https://blnk-app.github.io/blnk/uk/docs/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Інструкції BLNK",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Перший запуск",
+        "url": "https://blnk-app.github.io/blnk/uk/docs/getting-started/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Гарячі клавіші",
+        "url": "https://blnk-app.github.io/blnk/uk/docs/hotkeys/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Розв’язання проблем",
+        "url": "https://blnk-app.github.io/blnk/uk/docs/troubleshooting/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../../uk/">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" aria-label="Меню">
+        <a href="../../uk/features/">Можливості</a>
+        <a href="../../uk/docs/" aria-current="page">Інструкції</a>
+        <a href="../../uk/download/">Завантажити</a>
+        <a href="../../uk/changelog/">Що нового</a>
+        <a href="../../uk/about/">Про проєкт</a>
+      </nav>
+      <div class="tools">
+        <nav class="langs" aria-label="Мова">
+          <a href="../../docs/" hreflang="en" lang="en">EN</a>
+          <a href="../../ru/docs/" hreflang="ru" lang="ru">RU</a>
+          <a href="../../uk/docs/" hreflang="uk" lang="uk" aria-current="page">UK</a>
+        </nav>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Навігаційний ланцюжок"><ol><li><a href="../../uk/">Головна</a></li><li aria-current="page">Інструкції</li></ol></nav>
+        <article>
+        <h1>Інструкції BLNK</h1>
+        
+        <p class="lead">Короткі покрокові інструкції: як почати, як налаштувати гарячі клавіші й що робити, якщо щось не працює.</p>
+        <ul>
+          <li><a href="../../uk/docs/getting-started/">Перший запуск</a>: встановлення, перший знімок, запис зі звуком, де лежать файли й скільки місця займає BLNK.</li>
+          <li><a href="../../uk/docs/hotkeys/">Гарячі клавіші</a>: клавіші за замовчуванням, як їх змінити, одна клавіша чи сполучення, обмеження Windows.</li>
+          <li><a href="../../uk/docs/troubleshooting/">Розв’язання проблем</a>: гаряча клавіша не спрацьовує, Esc не зупиняє запис, немає звуку та інші часті випадки.</li>
+        </ul>
+        <p>Огляд функцій — на сторінці <a href="../../uk/features/">можливостей</a>. Зміни кожної версії — у розділі <a href="../../uk/changelog/">«Що нового»</a>.</p>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Дивіться також</h2>
+          <ul class="related">
+          <li><a href="../../uk/download/">Завантажити</a></li>
+          <li><a href="../../uk/features/">Можливості</a></li>
+          <li><a href="../../uk/changelog/">Що нового</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Спробуйте BLNK</h2>
+        <p>Безкоштовно, близько 6 МБ, встановлюється за секунди.</p>
+        <div class="downloads">
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити для Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows на ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+      <div>
+        <h2>Продукт</h2>
+        <ul>
+          <li><a href="../../uk/download/">Завантажити</a></li>
+          <li><a href="../../uk/features/">Можливості</a></li>
+          <li><a href="../../uk/changelog/">Що нового</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Можливості</h2>
+        <ul>
+          <li><a href="../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../uk/features/annotate/">Розмітка</a></li>
+          <li><a href="../../uk/features/blur/">Приховування особистих даних</a></li>
+          <li><a href="../../uk/features/share-link/">Приватні посилання</a></li>
+          <li><a href="../../uk/features/performance/">Швидкість і технології</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Інструкції</h2>
+        <ul>
+          <li><a href="../../uk/docs/getting-started/">Перший запуск</a></li>
+          <li><a href="../../uk/docs/hotkeys/">Гарячі клавіші</a></li>
+          <li><a href="../../uk/docs/troubleshooting/">Розв’язання проблем</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Проєкт</h2>
+        <ul>
+          <li><a href="../../uk/about/">Про проєкт</a></li>
+          <li><a href="../../uk/privacy/">Конфіденційність</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">Усі версії</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Підтримка</a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="copyright">© 2026 BLNK</p>
+    </footer>
+  </div>
+  <script src="../../app.js" defer></script>
+</body>
+</html>

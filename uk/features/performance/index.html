@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Легкий скріншотер на Rust для Windows | BLNK</title>
+  <meta name="description" content="BLNK — нативна програма для Windows на Rust, без Electron. Дізнайтеся, з яких технологій вона складається й чому залишається компактною.">
+  <link rel="canonical" href="https://blnk-app.github.io/blnk/uk/features/performance/">
+  <link rel="alternate" hreflang="en" href="https://blnk-app.github.io/blnk/features/performance/">
+  <link rel="alternate" hreflang="ru" href="https://blnk-app.github.io/blnk/ru/features/performance/">
+  <link rel="alternate" hreflang="uk" href="https://blnk-app.github.io/blnk/uk/features/performance/">
+  <link rel="alternate" hreflang="x-default" href="https://blnk-app.github.io/blnk/features/performance/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="Легкий скріншотер на Rust для Windows | BLNK">
+  <meta property="og:description" content="BLNK — нативна програма для Windows на Rust, без Electron. Дізнайтеся, з яких технологій вона складається й чому залишається компактною.">
+  <meta property="og:url" content="https://blnk-app.github.io/blnk/uk/features/performance/">
+  <meta property="og:image" content="https://blnk-app.github.io/blnk/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Головна",
+        "item": "https://blnk-app.github.io/blnk/uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Можливості",
+        "item": "https://blnk-app.github.io/blnk/uk/features/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Швидкість і технології",
+        "item": "https://blnk-app.github.io/blnk/uk/features/performance/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../../../uk/">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" aria-label="Меню">
+        <a href="../../../uk/features/">Можливості</a>
+        <a href="../../../uk/docs/">Інструкції</a>
+        <a href="../../../uk/download/">Завантажити</a>
+        <a href="../../../uk/changelog/">Що нового</a>
+        <a href="../../../uk/about/">Про проєкт</a>
+      </nav>
+      <div class="tools">
+        <nav class="langs" aria-label="Мова">
+          <a href="../../../features/performance/" hreflang="en" lang="en">EN</a>
+          <a href="../../../ru/features/performance/" hreflang="ru" lang="ru">RU</a>
+          <a href="../../../uk/features/performance/" hreflang="uk" lang="uk" aria-current="page">UK</a>
+        </nav>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Навігаційний ланцюжок"><ol><li><a href="../../../uk/">Головна</a></li><li><a href="../../../uk/features/">Можливості</a></li><li aria-current="page">Швидкість і технології</li></ol></nav>
+        <article>
+        <h1>Легкий скріншотер на Rust</h1>
+        
+        <p class="lead">BLNK — нативна програма на Rust. У ній немає Electron, а виділення й розмітка малюються без браузерного рушія.</p>
+        <dl class="facts"><div><dt>Версія</dt><dd>0.1.0-beta.10</dd></div><div><dt>Дата виходу</dt><dd><time datetime="2026-11-20">2026-11-20</time></dd></div><div><dt>Розмір інсталятора</dt><dd>5,9 МБ</dd></div></dl>
+
+        <h2>Заміри швидкості й пам’яті</h2>
+        <table>
+          <thead><tr><th scope="col">Показник</th><th scope="col">Результат</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Пам’ять у простої</th><td>4,5 МБ</td></tr>
+            <tr><th scope="row">Пам’ять після 10 знімків</th><td>5,1 МБ</td></tr>
+            <tr><th scope="row">Навантаження на процесор у простої</th><td>0%</td></tr>
+            <tr><th scope="row">Запуск до значка в треї</th><td>40–43 мс</td></tr>
+            <tr><th scope="row">Від команди до виділення на екрані</th><td>80 мс, медіана з 10</td></tr>
+            <tr><th scope="row">Розмір установленої програми</th><td>13,5 МБ</td></tr>
+            <tr><th scope="row">Пам’ять із відкритими налаштуваннями</th><td>77 МБ у 7 процесах</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Версія 0.1.0-beta.8, замір 19 листопада 2026 року на Windows 11 із процесором Intel Core i7-8550U і 16 ГБ пам’яті. Пам’ять — приватний робочий набір, який показує диспетчер завдань: медіана 10 показів після 2 хвилин простою в кожному з 3 запусків. Час запуску рахується від початку коду BLNK до готового значка в треї, без часу, який Windows витрачає на завантаження програми. Час до виділення рахується від отримання команди на знімок до показу виділення.</p>
+        <h2>З чого зроблено BLNK</h2>
+        <table>
+          <thead><tr><th scope="col">Частина</th><th scope="col">Технологія</th><th scope="col">Що це дає</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Застосунок</th><td>Rust</td><td>Нативний код без вбудованого браузера</td></tr>
+            <tr><th scope="row">Виділення й розмітка</th><td>winit, softbuffer, tiny-skia</td><td>Малюються без браузерного рушія</td></tr>
+            <tr><th scope="row">Запис екрана</th><td>Кодувальник H.264 у Windows</td><td>Не потрібен вбудований FFmpeg</td></tr>
+            <tr><th scope="row">Історія</th><td>SQLite</td><td>Зберігається локально на комп’ютері</td></tr>
+            <tr><th scope="row">Паролі від сховищ</th><td>Диспетчер облікових даних Windows</td><td>Секрети не лежать у файлах BLNK</td></tr>
+            <tr><th scope="row">Налаштування й історія</th><td>WebView2 і React</td><td>Завантажуються лише під час відкриття цих вікон</td></tr>
+          </tbody>
+        </table>
+        <h2>Чому BLNK залишається компактним</h2>
+        <ul>
+          <li>Основна робота виконується в нативному коді, без вбудованого браузерного рушія.</li>
+          <li>BLNK чекає в області сповіщень і відкриває важчі вікна лише на запит.</li>
+          <li>Для запису використовується відеокодувальник, уже вбудований у Windows.</li>
+        </ul>
+        <p>Перегляньте <a href="../../../uk/features/">повний список можливостей</a> або <a href="../../../uk/download/">завантажте BLNK</a>.</p>
+        <section aria-labelledby="page-faq">
+          <h2 id="page-faq">Питання й відповіді</h2>
+          <div class="faq">
+          <details>
+            <summary><h3>BLNK використовує Electron?</h3></summary>
+            <p>Ні. BLNK — нативний застосунок на Rust.</p>
+          </details>
+          <details>
+            <summary><h3>Навіщо тоді потрібен WebView2?</h3></summary>
+            <p>Вікна налаштувань та історії використовують Microsoft WebView2. Він запускається, лише коли ви відкриваєте ці вікна.</p>
+          </details>
+          <details>
+            <summary><h3>Чи потрібен FFmpeg для запису?</h3></summary>
+            <p>Ні. Запис екрана використовує кодувальник H.264, вбудований у Windows.</p>
+          </details>
+          </div>
+        </section>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Дивіться також</h2>
+          <ul class="related">
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../../uk/about/">Про проєкт</a></li>
+          <li><a href="../../../uk/download/">Завантажити</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Спробуйте BLNK</h2>
+        <p>Безкоштовно, близько 6 МБ, встановлюється за секунди.</p>
+        <div class="downloads">
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.10/blnk_0.1.0-beta.10_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити для Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows на ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+      <div>
+        <h2>Продукт</h2>
+        <ul>
+          <li><a href="../../../uk/download/">Завантажити</a></li>
+          <li><a href="../../../uk/features/">Можливості</a></li>
+          <li><a href="../../../uk/changelog/">Що нового</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Можливості</h2>
+        <ul>
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../../uk/features/annotate/">Розмітка</a></li>
+          <li><a href="../../../uk/features/blur/">Приховування особистих даних</a></li>
+          <li><a href="../../../uk/features/share-link/">Приватні посилання</a></li>
+          <li><a href="../../../uk/features/performance/">Швидкість і технології</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Інструкції</h2>
+        <ul>
+          <li><a href="../../../uk/docs/getting-started/">Перший запуск</a></li>
+          <li><a href="../../../uk/docs/hotkeys/">Гарячі клавіші</a></li>
+          <li><a href="../../../uk/docs/troubleshooting/">Розв’язання проблем</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Проєкт</h2>
+        <ul>
+          <li><a href="../../../uk/about/">Про проєкт</a></li>
+          <li><a href="../../../uk/privacy/">Конфіденційність</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">Усі версії</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Підтримка</a></li>
+        </ul>
+      </div>
+      </div>
+      <p class="copyright">© 2026 BLNK</p>
+    </footer>
+  </div>
+  <script src="../../../app.js" defer></script>
+</body>
+</html>

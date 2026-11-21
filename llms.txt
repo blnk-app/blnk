@@ -1,0 +1,57 @@
+# BLNK
+
+> BLNK is a free, lightweight screenshot tool and screen recorder for Windows. Slogan:
+> “Capture ideas before they’re gone”. Press a hotkey, select an area, annotate right over the selection and copy,
+> save or share a private link, or record the area to MP4. No account, no ads, no telemetry.
+
+## Key facts
+
+- Price: free; no account, no ads, no trial.
+- Current version: 0.1.0-beta.10 (beta).
+- Platforms: Windows 10 and 11 (x64); macOS version in testing.
+- Written in Rust, not Electron.
+- Measured on version 0.1.0-beta.8 (19 November 2026, Windows 11, Intel Core i7-8550U):
+  about 4.5 MB of memory at idle, 80 ms from capture command to selection, 13.5 MB installed.
+- Interface languages: English, Ukrainian, Russian.
+- Screen recording: MP4 (H.264), 30 or 60 fps, up to 30 minutes, with computer sound and
+  microphone (both off by default); GIF up to 1 minute without sound.
+- Privacy: screenshots and history stay on the computer; the app only goes online to
+  check for updates (GitHub) and to upload to storage the user configured
+  (S3-compatible storage such as Cloudflare R2, Google Drive, own HTTP address, FTP/FTPS, SFTP).
+- Updates: signed; the signature is verified before installing.
+
+## Pages
+
+- [Download](https://blnk-app.github.io/blnk/download/): Download the free BLNK installer for Windows 10 and 11. Current version, system requirements, installation steps and update details.
+- [Features](https://blnk-app.github.io/blnk/features/): Everything BLNK can do on Windows: screenshots, MP4 screen recording, annotation, automatic blur, private links and local history.
+- [Screen recording](https://blnk-app.github.io/blnk/features/screen-recorder/): Record any area of your Windows screen to MP4 with sound or to GIF for free. 30 or 60 fps, microphone, pause, countdown and recordings up to 30 minutes.
+- [Annotation](https://blnk-app.github.io/blnk/features/annotate/): Add arrows, boxes, text, numbers and highlights right over your screenshot selection. BLNK has eleven annotation tools with undo and redo.
+- [Hiding private data](https://blnk-app.github.io/blnk/features/blur/): Blur, pixelate or fill private data on Windows screenshots. BLNK can also blur browser tabs and bookmarks automatically before you share.
+- [Private links](https://blnk-app.github.io/blnk/features/share-link/): Upload screenshots and recordings to S3, Cloudflare R2, Google Drive, HTTP, FTP or SFTP and get a private link. BLNK uses random file names and removes metadata.
+- [Speed and technology](https://blnk-app.github.io/blnk/features/performance/): BLNK is a native Windows app written in Rust, without Electron. See its technology, what keeps it small and how its windows work.
+- [Guides](https://blnk-app.github.io/blnk/docs/): How to get started with BLNK on Windows: installing and taking your first screenshot, setting up hotkeys, recording with sound and fixing common problems.
+- [Getting started](https://blnk-app.github.io/blnk/docs/getting-started/): How to install BLNK on Windows, take your first screenshot, turn on sound in screen recordings and connect storage for links. Where files go and how much space it needs.
+- [Hotkeys](https://blnk-app.github.io/blnk/docs/hotkeys/): BLNK hotkeys on Windows: PrtSc, Shift+PrtSc, Ctrl+PrtSc and screen recording. How to set your own key and why hotkeys don’t work over administrator windows.
+- [Troubleshooting](https://blnk-app.github.io/blnk/docs/troubleshooting/): What to do when a BLNK hotkey doesn’t work, Esc doesn’t stop a recording, a video has no sound or a GIF cuts off. Causes and fixes.
+- [Changelog](https://blnk-app.github.io/blnk/changelog/): The BLNK version history: new features, improvements and fixes in every public beta for Windows.
+- [About](https://blnk-app.github.io/blnk/about/): BLNK is a free screenshot and screen recording app for Windows, built around speed, simplicity and privacy. Learn about the project.
+- [Privacy](https://blnk-app.github.io/blnk/privacy/): BLNK collects no data: no account, analytics or telemetry. What stays on your computer and when the app goes online.
+
+## FAQ
+
+- **Is BLNK free?** Yes. Everything BLNK does today is free. There is no account, no ads and no trial period.
+- **Does BLNK work on Mac?** BLNK runs on Windows 10 and 11 (x64; ARM builds are available up to 0.1.0-beta.4). The macOS version for Apple Silicon is in testing and will be available soon.
+- **Where are my screenshots stored?** On your computer, in the folder you choose. The history is stored locally too. Nothing is uploaded unless you send it yourself.
+- **How do I share a screenshot as a link?** Connect your own storage in the settings: S3, Cloudflare R2, Google Drive, an HTTP address, FTP or SFTP. After an upload, the link is copied to the clipboard. The file name is 22 random characters, so the link can't be guessed.
+- **Can I hide private information?** Yes. Blur, pixelate and fill change the pixels of the saved file. For passwords and card numbers use fill: it leaves nothing to recover. On Windows, BLNK can also blur browser tabs and bookmarks automatically.
+- **How is BLNK different from Lightshot and ShareX?** Like Lightshot, BLNK lets you annotate right over the selection, but links lead to your own storage instead of a shared public service. Compared with ShareX, BLNK is simpler: few settings, annotation in place, and a macOS version is on the way.
+- **What are the default hotkeys?** On Windows: PrtSc for an area, Shift+PrtSc for the whole screen, Ctrl+PrtSc for a window. On macOS: Option+Shift+1, 2 and 3. All of them can be changed in the settings; see the Hotkeys guide.
+- **How does BLNK update?** BLNK checks GitHub for new versions and installs them after you confirm. Every update is signed and the signature is verified before installing. Automatic checks can be turned off.
+
+## Links
+
+- [Home (English)](https://blnk-app.github.io/blnk/)
+- [Главная (русский)](https://blnk-app.github.io/blnk/ru/)
+- [Головна (українська)](https://blnk-app.github.io/blnk/uk/)
+- [All releases](https://github.com/blnk-app/blnk/releases)
+- [Support](https://github.com/blnk-app/blnk/issues)
