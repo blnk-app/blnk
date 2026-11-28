@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(d){d.classList.add("js");if(matchMedia("(pointer: coarse)").matches&&!/Windows NT/.test(navigator.userAgent))d.classList.add("phone");var t=null;try{t=localStorage.getItem("theme")}catch(e){}if(t==="dark"||t==="light")d.dataset.theme=t;if(t==="dark"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))d.classList.add("dark")})(document.documentElement)</script>
+  <title>Перший запуск BLNK: встановлення, перший знімок і запис</title>
+  <meta name="description" content="Як встановити BLNK на Windows, зробити перший знімок, увімкнути звук у записі екрана й підключити сховище для посилань. Де лежать файли й скільки місця потрібно.">
+  <link rel="canonical" href="https://blnkapp.com/uk/docs/getting-started/">
+  <link rel="alternate" hreflang="en" href="https://blnkapp.com/docs/getting-started/">
+  <link rel="alternate" hreflang="ru" href="https://blnkapp.com/ru/docs/getting-started/">
+  <link rel="alternate" hreflang="uk" href="https://blnkapp.com/uk/docs/getting-started/">
+  <link rel="alternate" hreflang="x-default" href="https://blnkapp.com/docs/getting-started/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="Перший запуск BLNK: встановлення, перший знімок і запис">
+  <meta property="og:description" content="Як встановити BLNK на Windows, зробити перший знімок, увімкнути звук у записі екрана й підключити сховище для посилань. Де лежать файли й скільки місця потрібно.">
+  <meta property="og:url" content="https://blnkapp.com/uk/docs/getting-started/">
+  <meta property="og:image" content="https://blnkapp.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Головна",
+        "item": "https://blnkapp.com/uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Інструкції",
+        "item": "https://blnkapp.com/uk/docs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Перший запуск",
+        "item": "https://blnkapp.com/uk/docs/getting-started/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../../../uk/">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" id="menu" aria-label="Меню">
+        <a href="../../../uk/features/">Можливості</a>
+        <a href="../../../uk/docs/">Інструкції</a>
+        <a href="../../../uk/download/">Завантажити</a>
+        <a href="../../../uk/changelog/">Що нового</a>
+        <a href="../../../uk/about/">Про проєкт</a>
+        <details class="lang-menu in-menu"><summary><span class="sr-only">Мова: </span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg><span>Українська</span></summary><ul aria-label="Мова"><li><a href="../../../docs/getting-started/" hreflang="en" lang="en">English</a></li><li><a href="../../../ru/docs/getting-started/" hreflang="ru" lang="ru">Русский</a></li><li><a href="../../../uk/docs/getting-started/" hreflang="uk" lang="uk" aria-current="page">Українська</a></li></ul></details>
+        <button class="button share menu-cta" type="button" hidden data-url="https://blnkapp.com/uk/" data-text="BLNK — скріншотер для Windows. Завантажити на комп’ютері:" data-done="Посилання скопійовано"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12M7 8l5-5 5 5"/></svg><span>Надіслати посилання на ПК</span></button>
+      </nav>
+      <div class="tools">
+        <button class="theme-toggle in-header" type="button" hidden data-dark="Увімкнути темну тему" data-light="Увімкнути світлу тему" aria-label="Увімкнути темну тему"><svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12c2.6-4.3 6-6.5 10-6.5S19.4 7.7 22 12c-2.6 4.3-6 6.5-10 6.5S4.6 16.3 2 12z"/><circle cx="12" cy="12" r="3.2"/></svg><svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 11c2.6 3.6 6 5.4 10 5.4s7.4-1.8 10-5.4"/><path d="M5.2 14.6 3.6 17M9 16.2l-.7 2.7M15 16.2l.7 2.7M18.8 14.6l1.6 2.4"/></svg></button>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.14/blnk_0.1.0-beta.14_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити</span>
+        </a>
+        <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="menu"
+          aria-label="Відкрити меню" data-open="Відкрити меню" data-close="Закрити меню">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Навігаційний ланцюжок"><ol><li><a href="../../../uk/">Головна</a></li><li><a href="../../../uk/docs/">Інструкції</a></li><li aria-current="page">Перший запуск</li></ol></nav>
+        <article>
+        <h1>Перший запуск BLNK</h1>
+        
+        <p class="lead">Від встановлення до першого знімка, запису зі звуком і посилання — за кілька хвилин.</p>
+        <h2>Встановлення</h2>
+        <ol>
+          <li>Завантажте інсталятор на <a href="../../../uk/download/">сторінці завантаження</a> і запустіть його.</li>
+          <li>Якщо Windows покаже попередження SmartScreen, натисніть «Докладніше», а потім «Усе одно запустити».</li>
+          <li>На першому екрані виберіть гарячі клавіші. Біля клавіші, що працює, з’явиться позначка «Працює».</li>
+        </ol>
+        <p>Після встановлення BLNK живе в треї, біля годинника. У меню його значка є знімки, запис екрана, історія й налаштування.</p>
+        <h2>Перший знімок</h2>
+        <p>Якщо потрібен знімок без програм, є вбудовані способи Windows — вони зібрані в інструкції <a href="../../../uk/docs/screenshot-windows/">«Як зробити скріншот на ноутбуці чи комп'ютері»</a>. З BLNK швидше:</p>
+        <ol>
+          <li>Натисніть PrtSc і виділіть область. Shift+PrtSc знімає весь екран, Ctrl+PrtSc — вікно.</li>
+          <li>Додайте стрілки, текст або <a href="../../../uk/features/blur/">приховайте особисті дані</a> просто поверх виділення.</li>
+          <li>Натисніть Enter або двічі клацніть усередині рамки — знімок скопіюється в буфер. Зберегти, завантажити або відкрити в редакторі можна кнопками на панелі.</li>
+        </ol>
+        <p>Ctrl+Shift+PrtSc повторює останню область. У вікні виділення Shift+C підтягує рамку до вмісту, M вмикає лінійку в пікселях. Усі клавіші — в інструкції <a href="../../../uk/docs/hotkeys/">«Гарячі клавіші»</a>.</p>
+        <h2>Запис екрана зі звуком</h2>
+        <ol>
+          <li>Відкрийте «Налаштування» → «Гарячі клавіші» й призначте клавішу для запису екрана. За замовчуванням її немає.</li>
+          <li>Щоб записати звук, відкрийте «Знімок» → «Запис екрана» й увімкніть «Звук комп'ютера» та «Мікрофон». За замовчуванням вони вимкнені.</li>
+          <li>Там само виберіть формат: MP4 для відео до 30 хвилин або GIF для коротких роликів до хвилини. У GIF звуку немає.</li>
+          <li>Натисніть клавішу запису, виділіть область і натисніть Enter. Зупинити запис можна кнопкою «Стоп», клавішею Esc або повторним натисканням гарячої клавіші.</li>
+        </ol>
+        <p>Докладніше про параметри — на сторінці <a href="../../../uk/features/screen-recorder/">запису екрана</a>.</p>
+        <p>У відео можна підсвічувати кліки й показувати сполучення клавіш: «Знімок» → «Запис екрана» → «Підсвічувати кліки» і «Показувати сполучення клавіш».</p>
+        <h2>Довгий скріншот</h2>
+        <p>Щоб зняти повністю сторінку, листування чи документ, призначте клавішу «Довгий скриншот» у «Налаштування» → «Гарячі клавіші» й прокручуйте коліщатком миші — BLNK склеїть кадри сам. Як це працює і які є обмеження, розказано на сторінці <a href="../../../uk/features/scrolling-capture/">«Довгий скріншот»</a>.</p>
+        <h2>Пресети</h2>
+        <p>Пресет — набір налаштувань знімка: рамка, стиль розмітки, курсор, затримка, автоблюр, формат і тека збереження. Гарячі клавіші, мова й завантаження до пресетів не входять.</p>
+        <ul>
+          <li><strong>«Звичайний»</strong> — ваші налаштування.</li>
+          <li><strong>«Для чатів»</strong> — менший JPG, Enter копіює.</li>
+          <li><strong>«Для документації»</strong> — PNG, рамка 16:9, товсті червоні стрілки.</li>
+          <li><strong>«Для дизайну»</strong> — PNG без зменшення, без курсора й автоблюру.</li>
+        </ul>
+        <p>Вибрати пресет можна в «Налаштування» → «Знімок», у меню значка BLNK у треї або гарячою клавішею «Наступний пресет». Зміни налаштувань зберігаються у вибраний пресет. Свій пресет створюється кнопкою «Зберегти як новий».</p>
+        <p>Там само, у блоці «Палітра», можна перемкнутися на свою палітру з восьми кольорів. Вона запам’ятовується й зберігається в пресеті.</p>
+        <h2>Посилання на знімок</h2>
+        <p>Відкрийте «Налаштування» → «Завантаження», виберіть сховище й натисніть кнопку перевірки. Після цього Ctrl+U завантажує знімок і копіює посилання. Які сховища підходять, розказано на сторінці <a href="../../../uk/features/share-link/">приватних посилань</a>.</p>
+        <h2>Де лежать файли</h2>
+        <ul>
+          <li>Знімки й записи зберігаються в теку «Зображення\Screenshots». Іншу теку можна вибрати в «Налаштування» → «Збереження».</li>
+          <li>Історія, налаштування й журнал роботи зберігаються в теці даних BLNK і нікуди не надсилаються. Докладніше — на сторінці <a href="../../../uk/privacy/">конфіденційності</a>.</li>
+        </ul>
+        <h2>Скільки місця займає BLNK</h2>
+        <table>
+          <tbody>
+            <tr><th scope="row">Програма</th><td>Близько 14 МБ</td></tr>
+            <tr><th scope="row">WebView2</th><td>Ще близько 60 МБ після першого відкриття налаштувань або історії</td></tr>
+            <tr><th scope="row">Історія</th><td>Близько 0,25 МБ на запис. За замовчуванням до 500 записів, це близько 130 МБ</td></tr>
+            <tr><th scope="row">Знімки й відео</th><td>У вашій теці, скільки важать самі файли</td></tr>
+          </tbody>
+        </table>
+        <p>Ліміт історії — 100, 500, 1000 або 5000 записів — змінюється в «Налаштування» → «Збереження» → «Історія». Старі записи видаляються з історії самі, а файли в теці знімків залишаються.</p>
+        <section aria-labelledby="page-faq">
+          <h2 id="page-faq">Питання й відповіді</h2>
+          <div class="faq">
+          <details>
+            <summary><h3>Чи потрібно запускати BLNK від імені адміністратора?</h3></summary>
+            <p>Ні. BLNK працює зі звичайними правами.</p>
+          </details>
+          <details>
+            <summary><h3>Чому не працює гаряча клавіша запису?</h3></summary>
+            <p>За замовчуванням її не призначено. Задайте її в налаштуваннях, у розділі «Гарячі клавіші».</p>
+          </details>
+          <details>
+            <summary><h3>Скільки місця займає історія?</h3></summary>
+            <p>Близько 0,25 МБ на запис. За замовчуванням зберігається до 500 записів, це близько 130 МБ. Ліміт змінюється в налаштуваннях.</p>
+          </details>
+          </div>
+        </section>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Дивіться також</h2>
+          <ul class="related">
+          <li><a href="../../../uk/docs/hotkeys/">Гарячі клавіші</a></li>
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../../uk/features/share-link/">Приватні посилання</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Спробуйте BLNK</h2>
+        <p>Близько 6 МБ, встановлюється за секунди.</p>
+        <div class="downloads">
+            <button class="button share" type="button" hidden data-url="https://blnkapp.com/uk/" data-text="BLNK — скріншотер для Windows. Завантажити на комп’ютері:" data-done="Посилання скопійовано"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12M7 8l5-5 5 5"/></svg><span>Надіслати посилання на ПК</span></button>
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.14/blnk_0.1.0-beta.14_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити для Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows на ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <a class="brand" href="../../../uk/"><svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>BLNK</a>
+        <p lang="en">Capture ideas before they’re gone</p>
+      </div>
+      <div class="footer-grid">
+      <div>
+        <h2>Продукт</h2>
+        <ul>
+          <li><a href="../../../uk/download/">Завантажити</a></li>
+          <li><a href="../../../uk/features/">Можливості</a></li>
+          <li><a href="../../../uk/changelog/">Що нового</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Можливості</h2>
+        <ul>
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../../uk/features/scrolling-capture/">Довгий скріншот</a></li>
+          <li><a href="../../../uk/features/annotate/">Розмітка</a></li>
+          <li><a href="../../../uk/features/blur/">Приховування особистих даних</a></li>
+          <li><a href="../../../uk/features/share-link/">Приватні посилання</a></li>
+          <li><a href="../../../uk/features/performance/">Швидкість і технології</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Інструкції</h2>
+        <ul>
+          <li><a href="../../../uk/docs/screenshot-windows/">Скріншот на ноутбуці</a></li>
+          <li><a href="../../../uk/docs/where-screenshots-saved/">Куди зберігаються скріншоти</a></li>
+          <li><a href="../../../uk/docs/getting-started/">Перший запуск</a></li>
+          <li><a href="../../../uk/docs/hotkeys/">Гарячі клавіші</a></li>
+          <li><a href="../../../uk/docs/troubleshooting/">Розв’язання проблем</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Проєкт</h2>
+        <ul>
+          <li><a href="../../../uk/about/">Про проєкт</a></li>
+          <li><a href="../../../uk/privacy/">Конфіденційність</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">Усі версії</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Підтримка</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 BLNK</p>
+        <details class="lang-menu in-footer"><summary><span class="sr-only">Мова: </span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg><span>Українська</span></summary><ul aria-label="Мова"><li><a href="../../../docs/getting-started/" hreflang="en" lang="en">English</a></li><li><a href="../../../ru/docs/getting-started/" hreflang="ru" lang="ru">Русский</a></li><li><a href="../../../uk/docs/getting-started/" hreflang="uk" lang="uk" aria-current="page">Українська</a></li></ul></details>
+      </div>
+    </footer>
+  </div>
+  <a class="to-top" href="#" aria-label="Догори"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+  <script src="../../../app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(d){d.classList.add("js");if(matchMedia("(pointer: coarse)").matches&&!/Windows NT/.test(navigator.userAgent))d.classList.add("phone");var t=null;try{t=localStorage.getItem("theme")}catch(e){}if(t==="dark"||t==="light")d.dataset.theme=t;if(t==="dark"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))d.classList.add("dark")})(document.documentElement)</script>
+  <title>BLNK Guides — Getting Started, Hotkeys and Troubleshooting</title>
+  <meta name="description" content="How to get started with BLNK on Windows: installing and taking your first screenshot, setting up hotkeys, recording with sound and fixing common problems.">
+  <link rel="canonical" href="https://blnkapp.com/docs/">
+  <link rel="alternate" hreflang="en" href="https://blnkapp.com/docs/">
+  <link rel="alternate" hreflang="ru" href="https://blnkapp.com/ru/docs/">
+  <link rel="alternate" hreflang="uk" href="https://blnkapp.com/uk/docs/">
+  <link rel="alternate" hreflang="x-default" href="https://blnkapp.com/docs/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="BLNK Guides — Getting Started, Hotkeys and Troubleshooting">
+  <meta property="og:description" content="How to get started with BLNK on Windows: installing and taking your first screenshot, setting up hotkeys, recording with sound and fixing common problems.">
+  <meta property="og:url" content="https://blnkapp.com/docs/">
+  <meta property="og:image" content="https://blnkapp.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://blnkapp.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://blnkapp.com/docs/"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "BLNK guides",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Screenshot on Windows",
+        "url": "https://blnkapp.com/docs/screenshot-windows/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Where screenshots go",
+        "url": "https://blnkapp.com/docs/where-screenshots-saved/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Getting started",
+        "url": "https://blnkapp.com/docs/getting-started/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Hotkeys",
+        "url": "https://blnkapp.com/docs/hotkeys/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Troubleshooting",
+        "url": "https://blnkapp.com/docs/troubleshooting/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" id="menu" aria-label="Menu">
+        <a href="../features/">Features</a>
+        <a href="../docs/" aria-current="page">Guides</a>
+        <a href="../download/">Download</a>
+        <a href="../changelog/">Changelog</a>
+        <a href="../about/">About</a>
+        <details class="lang-menu in-menu"><summary><span class="sr-only">Language: </span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><ul aria-label="Language"><li><a href="../docs/" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="../ru/docs/" hreflang="ru" lang="ru">Русский</a></li><li><a href="../uk/docs/" hreflang="uk" lang="uk">Українська</a></li></ul></details>
+        <button class="button share menu-cta" type="button" hidden data-url="https://blnkapp.com/" data-text="BLNK, a screenshot tool for Windows. Download it on your computer:" data-done="Link copied"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12M7 8l5-5 5 5"/></svg><span>Send the link to your PC</span></button>
+      </nav>
+      <div class="tools">
+        <button class="theme-toggle in-header" type="button" hidden data-dark="Switch to dark theme" data-light="Switch to light theme" aria-label="Switch to dark theme"><svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12c2.6-4.3 6-6.5 10-6.5S19.4 7.7 22 12c-2.6 4.3-6 6.5-10 6.5S4.6 16.3 2 12z"/><circle cx="12" cy="12" r="3.2"/></svg><svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 11c2.6 3.6 6 5.4 10 5.4s7.4-1.8 10-5.4"/><path d="M5.2 14.6 3.6 17M9 16.2l-.7 2.7M15 16.2l.7 2.7M18.8 14.6l1.6 2.4"/></svg></button>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.14/blnk_0.1.0-beta.14_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Download</span>
+        </a>
+        <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="menu"
+          aria-label="Open menu" data-open="Open menu" data-close="Close menu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="../">Home</a></li><li aria-current="page">Guides</li></ol></nav>
+        <article>
+        <h1>BLNK guides</h1>
+        
+        <p class="lead">Short step-by-step guides: how to get started, how to set up hotkeys and what to do when something doesn’t work.</p>
+        <ul>
+          <li><a href="../docs/screenshot-windows/">How to take a screenshot on Windows</a>: every built-in method — PrtSc, Win+PrtSc, Alt+PrtSc, Win+Shift+S, laptops, and where the file is saved.</li>
+          <li><a href="../docs/where-screenshots-saved/">Where screenshots go</a>: the Screenshots folder, the clipboard and Win+V history, Snipping Tool snips, and changing the folder.</li>
+          <li><a href="../docs/getting-started/">Getting started</a>: installing, your first screenshot, recording with sound, scrolling capture, presets, where files go and how much space BLNK uses.</li>
+          <li><a href="../docs/hotkeys/">Hotkeys</a>: default keys, how to change them, single keys versus shortcuts, and Windows limits.</li>
+          <li><a href="../docs/troubleshooting/">Troubleshooting</a>: a hotkey doesn’t work, Esc doesn’t stop a recording, no sound, scrolling capture and other common cases.</li>
+        </ul>
+        <p>For an overview of what BLNK does, see the <a href="../features/">features</a> page. Changes in each version are in the <a href="../changelog/">changelog</a>.</p>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Related pages</h2>
+          <ul class="related">
+          <li><a href="../download/">Download</a></li>
+          <li><a href="../features/">Features</a></li>
+          <li><a href="../changelog/">Changelog</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Try BLNK now</h2>
+        <p>About 6 MB, installs in seconds.</p>
+        <div class="downloads">
+            <button class="button share" type="button" hidden data-url="https://blnkapp.com/" data-text="BLNK, a screenshot tool for Windows. Download it on your computer:" data-done="Link copied"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12M7 8l5-5 5 5"/></svg><span>Send the link to your PC</span></button>
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.14/blnk_0.1.0-beta.14_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Download for Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows on ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <a class="brand" href="../"><svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>BLNK</a>
+        <p lang="en">Capture ideas before they’re gone</p>
+      </div>
+      <div class="footer-grid">
+      <div>
+        <h2>Product</h2>
+        <ul>
+          <li><a href="../download/">Download</a></li>
+          <li><a href="../features/">Features</a></li>
+          <li><a href="../changelog/">Changelog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Features</h2>
+        <ul>
+          <li><a href="../features/screen-recorder/">Screen recording</a></li>
+          <li><a href="../features/scrolling-capture/">Scrolling screenshot</a></li>
+          <li><a href="../features/annotate/">Annotation</a></li>
+          <li><a href="../features/blur/">Hiding private data</a></li>
+          <li><a href="../features/share-link/">Private links</a></li>
+          <li><a href="../features/performance/">Speed and technology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="../docs/screenshot-windows/">Screenshot on Windows</a></li>
+          <li><a href="../docs/where-screenshots-saved/">Where screenshots go</a></li>
+          <li><a href="../docs/getting-started/">Getting started</a></li>
+          <li><a href="../docs/hotkeys/">Hotkeys</a></li>
+          <li><a href="../docs/troubleshooting/">Troubleshooting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Project</h2>
+        <ul>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">All versions</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Support</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 BLNK</p>
+        <details class="lang-menu in-footer"><summary><span class="sr-only">Language: </span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><ul aria-label="Language"><li><a href="../docs/" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="../ru/docs/" hreflang="ru" lang="ru">Русский</a></li><li><a href="../uk/docs/" hreflang="uk" lang="uk">Українська</a></li></ul></details>
+      </div>
+    </footer>
+  </div>
+  <a class="to-top" href="#" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+  <script src="../app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(d){d.classList.add("js");if(matchMedia("(pointer: coarse)").matches&&!/Windows NT/.test(navigator.userAgent))d.classList.add("phone");var t=null;try{t=localStorage.getItem("theme")}catch(e){}if(t==="dark"||t==="light")d.dataset.theme=t;if(t==="dark"||(t!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches))d.classList.add("dark")})(document.documentElement)</script>
+  <title>Гарячі клавіші BLNK: за замовчуванням, налаштування й обмеження</title>
+  <meta name="description" content="Гарячі клавіші BLNK на Windows: PrtSc, Shift+PrtSc, Ctrl+PrtSc і запис екрана. Як призначити свою клавішу й чому клавіші не працюють у вікнах адміністратора.">
+  <link rel="canonical" href="https://blnkapp.com/uk/docs/hotkeys/">
+  <link rel="alternate" hreflang="en" href="https://blnkapp.com/docs/hotkeys/">
+  <link rel="alternate" hreflang="ru" href="https://blnkapp.com/ru/docs/hotkeys/">
+  <link rel="alternate" hreflang="uk" href="https://blnkapp.com/uk/docs/hotkeys/">
+  <link rel="alternate" hreflang="x-default" href="https://blnkapp.com/docs/hotkeys/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BLNK">
+  <meta property="og:title" content="Гарячі клавіші BLNK: за замовчуванням, налаштування й обмеження">
+  <meta property="og:description" content="Гарячі клавіші BLNK на Windows: PrtSc, Shift+PrtSc, Ctrl+PrtSc і запис екрана. Як призначити свою клавішу й чому клавіші не працюють у вікнах адміністратора.">
+  <meta property="og:url" content="https://blnkapp.com/uk/docs/hotkeys/">
+  <meta property="og:image" content="https://blnkapp.com/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="BLNK — Capture ideas before they’re gone">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0b0c" media="(prefers-color-scheme: dark)">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../../../icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
+  <link rel="stylesheet" href="../../../style.css">
+  <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Головна",
+        "item": "https://blnkapp.com/uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Інструкції",
+        "item": "https://blnkapp.com/uk/docs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Гарячі клавіші",
+        "item": "https://blnkapp.com/uk/docs/hotkeys/"
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">До вмісту</a>
+  <div class="lang-banner" hidden></div>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="../../../uk/">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>
+        BLNK
+      </a>
+      <nav class="links" id="menu" aria-label="Меню">
+        <a href="../../../uk/features/">Можливості</a>
+        <a href="../../../uk/docs/">Інструкції</a>
+        <a href="../../../uk/download/">Завантажити</a>
+        <a href="../../../uk/changelog/">Що нового</a>
+        <a href="../../../uk/about/">Про проєкт</a>
+        <details class="lang-menu in-menu"><summary><span class="sr-only">Мова: </span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg><span>Українська</span></summary><ul aria-label="Мова"><li><a href="../../../docs/hotkeys/" hreflang="en" lang="en">English</a></li><li><a href="../../../ru/docs/hotkeys/" hreflang="ru" lang="ru">Русский</a></li><li><a href="../../../uk/docs/hotkeys/" hreflang="uk" lang="uk" aria-current="page">Українська</a></li></ul></details>
+        <button class="button share menu-cta" type="button" hidden data-url="https://blnkapp.com/uk/" data-text="BLNK — скріншотер для Windows. Завантажити на комп’ютері:" data-done="Посилання скопійовано"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12M7 8l5-5 5 5"/></svg><span>Надіслати посилання на ПК</span></button>
+      </nav>
+      <div class="tools">
+        <button class="theme-toggle in-header" type="button" hidden data-dark="Увімкнути темну тему" data-light="Увімкнути світлу тему" aria-label="Увімкнути темну тему"><svg class="eye-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12c2.6-4.3 6-6.5 10-6.5S19.4 7.7 22 12c-2.6 4.3-6 6.5-10 6.5S4.6 16.3 2 12z"/><circle cx="12" cy="12" r="3.2"/></svg><svg class="eye-closed" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 11c2.6 3.6 6 5.4 10 5.4s7.4-1.8 10-5.4"/><path d="M5.2 14.6 3.6 17M9 16.2l-.7 2.7M15 16.2l.7 2.7M18.8 14.6l1.6 2.4"/></svg></button>
+        <a class="button small" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.14/blnk_0.1.0-beta.14_x64-setup.exe">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити</span>
+        </a>
+        <button class="menu-toggle" type="button" hidden aria-expanded="false" aria-controls="menu"
+          aria-label="Відкрити меню" data-open="Відкрити меню" data-close="Закрити меню">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="doc">
+        <nav class="crumbs" aria-label="Навігаційний ланцюжок"><ol><li><a href="../../../uk/">Головна</a></li><li><a href="../../../uk/docs/">Інструкції</a></li><li aria-current="page">Гарячі клавіші</li></ol></nav>
+        <article>
+        <h1>Гарячі клавіші BLNK</h1>
+        
+        <p class="lead">Які клавіші стоять за замовчуванням, як призначити свої і де Windows не пускає до них жодну програму.</p>
+        <h2>Клавіші за замовчуванням</h2>
+        <table>
+          <thead><tr><th scope="col">Дія</th><th scope="col">Клавіша</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Знімок області</th><td>PrtSc</td></tr>
+            <tr><th scope="row">Знімок екрана</th><td>Shift+PrtSc</td></tr>
+            <tr><th scope="row">Знімок вікна</th><td>Ctrl+PrtSc</td></tr>
+            <tr><th scope="row">Повторити область</th><td>Ctrl+Shift+PrtSc</td></tr>
+            <tr><th scope="row">Запис екрана</th><td>Не призначено</td></tr>
+            <tr><th scope="row">Довгий скриншот</th><td>Не призначено</td></tr>
+            <tr><th scope="row">Наступний пресет</th><td>Не призначено</td></tr>
+          </tbody>
+        </table>
+        <p>Ті самі дії є в меню значка BLNK у треї.</p>
+        <h2>Як змінити клавішу</h2>
+        <ol>
+          <li>Відкрийте «Налаштування» → «Гарячі клавіші».</li>
+          <li>Натисніть «Змінити» біля дії й натисніть нову клавішу або сполучення. Esc скасовує.</li>
+          <li>Коли клавіша запрацює, поруч з’явиться позначка «Працює».</li>
+        </ol>
+        <p>Кнопка «За замовчуванням» повертає попередню клавішу, «Вимкнути» прибирає її зовсім, «Скинути всі» повертає всі клавіші.</p>
+        <h2>Клавіші у вікні виділення</h2>
+        <table>
+          <thead><tr><th scope="col">Клавіша</th><th scope="col">Що робить</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Enter</th><td>Дія з налаштувань: копіювати або зберегти</td></tr>
+            <tr><th scope="row">Esc</th><td>Прибрати інструмент або виділення, ще раз — закрити</td></tr>
+            <tr><th scope="row">A, R, L, H, T, N, B</th><td>Стрілка, рамка, лінія, маркер, текст, номер, розмиття</td></tr>
+            <tr><th scope="row">M</th><td>Лінійка в пікселях, у знімок не потрапляє</td></tr>
+            <tr><th scope="row">Shift+C</th><td>Підтягнути рамку до вмісту, ще раз — наступний шар</td></tr>
+            <tr><th scope="row">C</th><td>Скопіювати колір пікселя під курсором</td></tr>
+            <tr><th scope="row">E</th><td>Відкрити у вікні редактора</td></tr>
+            <tr><th scope="row">Ctrl+C, Ctrl+S, Ctrl+U</th><td>Копіювати, зберегти, завантажити й скопіювати посилання</td></tr>
+            <tr><th scope="row">Ctrl+Z, Ctrl+Y</th><td>Скасувати й повторити</td></tr>
+            <tr><th scope="row">Ctrl+D</th><td>Копія виділеної фігури</td></tr>
+            <tr><th scope="row">Ctrl+B</th><td>Увімкнути або прибрати автоблюр</td></tr>
+            <tr><th scope="row">Стрілки</th><td>Зсунути рамку чи фігуру на точку, із Shift — на 10</td></tr>
+          </tbody>
+        </table>
+        <h2>Одна клавіша чи сполучення</h2>
+        <p>Гарячою клавішею може бути одна клавіша або сполучення з Ctrl, Alt, Shift і Win. Одна клавіша перехоплюється в усіх програмах: її не можна буде надрукувати, і вона перестане працювати під час набору тексту. Для одиночної клавіші краще підходять Pause і F13–F24. Якщо вибране сполучення вже зайняте Windows, BLNK запропонує вільне з Ctrl+Alt.</p>
+        <p>BLNK перехоплює гарячі клавіші раніше за інші програми, зокрема PrtSc. Тому, якщо клавішу призначено й в іншому скриншотері або утиліті клавіатури, у звичайних вікнах спрацює BLNK.</p>
+        <h2>Обмеження Windows</h2>
+        <p>Windows захищає вікна, запущені від імені адміністратора: PowerShell або командний рядок від адміністратора, Диспетчер завдань, інсталятори. Звичайні програми не отримують натискань клавіш, поки таке вікно активне.</p>
+        <ul>
+          <li><strong>Сполучення з Ctrl, Alt, Shift або Win</strong> над такими вікнами працюють із версії 0.1.0-beta.11.</li>
+          <li><strong>Одиночні клавіші</strong> — PrtSc, End, F-клавіші — над такими вікнами не працюють: це захист Windows. Якщо ви часто робите знімки поверх вікон адміністратора, призначте сполучення з модифікатором. Або клацніть по іншому вікну чи виберіть знімок у меню значка BLNK у треї.</li>
+          <li><strong>Клавіші від утиліт.</strong> Якщо натискання надсилає програма, наприклад Logi Options+, а не сама клавіатура, над вікнами адміністратора воно не дійде до жодної програми.</li>
+          <li><strong>Esc під час запису</strong> над вікном адміністратора запис не зупиняє. Натисніть «Стоп» на панелі або ще раз гарячу клавішу запису.</li>
+        </ul>
+        <p>Запускати BLNK від імені адміністратора не потрібно. Інші часті випадки зібрано в <a href="../../../uk/docs/troubleshooting/">розв’язанні проблем</a>.</p>
+        <section aria-labelledby="page-faq">
+          <h2 id="page-faq">Питання й відповіді</h2>
+          <div class="faq">
+          <details>
+            <summary><h3>Можна призначити одну клавішу без Ctrl і Alt?</h3></summary>
+            <p>Так. Але така клавіша перехоплюється в усіх програмах, і її не можна буде надрукувати. Краще вибрати Pause, F13–F24 або сполучення з Ctrl+Alt.</p>
+          </details>
+          <details>
+            <summary><h3>PrtSc уже зайнятий іншим скриншотером. Що буде?</h3></summary>
+            <p>BLNK перехоплює гарячі клавіші раніше за інші програми, тому у звичайних вікнах спрацює BLNK.</p>
+          </details>
+          <details>
+            <summary><h3>Чому гаряча клавіша не працює в Диспетчері завдань?</h3></summary>
+            <p>Він запущений від імені адміністратора, а Windows не передає клавіші таких вікон звичайним програмам. Докладніше — у розділі про обмеження нижче.</p>
+          </details>
+          </div>
+        </section>
+        <section aria-labelledby="page-related">
+          <h2 id="page-related">Дивіться також</h2>
+          <ul class="related">
+          <li><a href="../../../uk/docs/troubleshooting/">Розв’язання проблем</a></li>
+          <li><a href="../../../uk/docs/getting-started/">Перший запуск</a></li>
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+      <section class="block cta" aria-labelledby="cta-title">
+        <h2 class="section-title" id="cta-title">Спробуйте BLNK</h2>
+        <p>Близько 6 МБ, встановлюється за секунди.</p>
+        <div class="downloads">
+            <button class="button share" type="button" hidden data-url="https://blnkapp.com/uk/" data-text="BLNK — скріншотер для Windows. Завантажити на комп’ютері:" data-done="Посилання скопійовано"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="M12 3v12M7 8l5-5 5 5"/></svg><span>Надіслати посилання на ПК</span></button>
+            <a class="button" data-asset="_x64-setup.exe" href="https://github.com/blnk-app/blnk/releases/download/v0.1.0-beta.14/blnk_0.1.0-beta.14_x64-setup.exe">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.3z"/></svg><span>Завантажити для Windows</span>
+            </a>
+            <a class="alt" data-asset="_arm64-setup.exe" href="https://github.com/blnk-app/blnk/releases">Windows на ARM</a>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <a class="brand" href="../../../uk/"><svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" d="M34 11H19.4A8.4 8.4 0 0 0 11 19.4V34M66 11h14.6a8.4 8.4 0 0 1 8.4 8.4V34M34 89H19.4A8.4 8.4 0 0 1 11 80.6V66M66 89h14.6a8.4 8.4 0 0 0 8.4-8.4V66"/></svg>BLNK</a>
+        <p lang="en">Capture ideas before they’re gone</p>
+      </div>
+      <div class="footer-grid">
+      <div>
+        <h2>Продукт</h2>
+        <ul>
+          <li><a href="../../../uk/download/">Завантажити</a></li>
+          <li><a href="../../../uk/features/">Можливості</a></li>
+          <li><a href="../../../uk/changelog/">Що нового</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Можливості</h2>
+        <ul>
+          <li><a href="../../../uk/features/screen-recorder/">Запис екрана</a></li>
+          <li><a href="../../../uk/features/scrolling-capture/">Довгий скріншот</a></li>
+          <li><a href="../../../uk/features/annotate/">Розмітка</a></li>
+          <li><a href="../../../uk/features/blur/">Приховування особистих даних</a></li>
+          <li><a href="../../../uk/features/share-link/">Приватні посилання</a></li>
+          <li><a href="../../../uk/features/performance/">Швидкість і технології</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Інструкції</h2>
+        <ul>
+          <li><a href="../../../uk/docs/screenshot-windows/">Скріншот на ноутбуці</a></li>
+          <li><a href="../../../uk/docs/where-screenshots-saved/">Куди зберігаються скріншоти</a></li>
+          <li><a href="../../../uk/docs/getting-started/">Перший запуск</a></li>
+          <li><a href="../../../uk/docs/hotkeys/">Гарячі клавіші</a></li>
+          <li><a href="../../../uk/docs/troubleshooting/">Розв’язання проблем</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Проєкт</h2>
+        <ul>
+          <li><a href="../../../uk/about/">Про проєкт</a></li>
+          <li><a href="../../../uk/privacy/">Конфіденційність</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/releases">Усі версії</a></li>
+          <li><a href="https://github.com/blnk-app/blnk/issues">Підтримка</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 BLNK</p>
+        <details class="lang-menu in-footer"><summary><span class="sr-only">Мова: </span><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg><span>Українська</span></summary><ul aria-label="Мова"><li><a href="../../../docs/hotkeys/" hreflang="en" lang="en">English</a></li><li><a href="../../../ru/docs/hotkeys/" hreflang="ru" lang="ru">Русский</a></li><li><a href="../../../uk/docs/hotkeys/" hreflang="uk" lang="uk" aria-current="page">Українська</a></li></ul></details>
+      </div>
+    </footer>
+  </div>
+  <a class="to-top" href="#" aria-label="Догори"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+  <script src="../../../app.js" defer></script>
+</body>
+</html>
